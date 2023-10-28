@@ -1,0 +1,15 @@
+﻿module f_lib.test.VortexTests
+
+open NUnit.Framework
+open f_lib.Vortex
+
+[<TestFixture>]
+type VortexTests() =
+    
+    [<SetUp>]
+    member public self.SetUpTest() =
+        for StopppingTime n in 10..12 do printf $"{n} "
+
+    [<Test>]
+    member public self.CollatzTest() =
+        Assert.That(CountSteps 100, Is.GreaterThan(1))
