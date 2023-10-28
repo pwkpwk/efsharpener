@@ -15,4 +15,8 @@
       <ProjectReference Include="..\c-lib\c-lib.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <PackageReference Update="FSharp.Core" Version="8.0.100-beta.23475.2" />
+    </ItemGroup>
+
 </Project>
